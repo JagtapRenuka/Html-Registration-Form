@@ -5,7 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
 </head>
-<body>
+<style>
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    /* input[type=text],input[type=password],textarea{
+        width:100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    } */
+</style>
+<body bgcolor="Lightskyblue">
     <form>
         <label for="fname">First Name:</label>
         <input type="text" id="fname">
@@ -19,6 +32,7 @@
         <input type="text" id="lname">
         <br>
         <br>
+        <div>
         <label>Course</label>
         <select>
             <option value="course">course</option>
@@ -27,8 +41,10 @@
             <option value="Python">Python</option>
             <option value="AI&ML">AI&ML</option>
         </select>
+    </div>
         <br>
         <br>
+        <div>
         <label>Gender</label>
         <br>
         <input type="radio" name="male">Male
@@ -36,6 +52,7 @@
         <input type="radio" name="female">Female
         <br>
         <input type="radio" name="other">Other
+    </div>
         <br><br>
         <label>Phone:</label>
         <input type="text" value="+91" size="2">
